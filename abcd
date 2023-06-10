@@ -1,0 +1,20 @@
+import time
+import matplotlib.pyplotas plt
+defbubblesort(a):
+    n = len(a)
+for iin range(n-1):
+for j in range(n-1-i):
+if a[j]>a[j+1]:
+            temp = a[j]
+            a[j] = a[j+1]
+            a[j+1] = temp
+x = [34,46,43,27,57,41,45,21,70]
+print("Before sorting:",x)
+bubblesort(x)
+print("After sorting:",x)
+x=list(range(1,10000))
+plt.plot(x,[y*y for y in x] )
+plt.title("Bubble sort- Time Complexity is O(n)")
+plt.xlabel("Input")
+plt.ylabel("Time")
+plt.show()
